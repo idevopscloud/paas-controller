@@ -1,0 +1,27 @@
+{
+  "docker": {
+    "http": null,
+    "telnet": null,
+    "proc": true
+  },
+  "flannel": {
+    "http": null,
+    "telnet": null,
+    "proc": true
+  },
+  "kubelet": {
+    "http": "NODE_IP:10250/healthz",
+    "telnet": "NODE_IP:10250",
+    "proc": true
+  },
+  "kube-proxy": {
+    "http": null,
+    "telnet": null,
+    "proc": true
+  },
+  "paas-agent": {
+    "http": "NODE_IP:12305/api/v1.1/machine",
+    "telnet": "NODE_IP:12305",
+    "proc": false
+  }
+}
